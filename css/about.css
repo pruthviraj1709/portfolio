@@ -1,0 +1,217 @@
+/* ==========================================================================
+   1. MASTER COLOR PALETTE (The :root System)
+   ========================================================================== */
+:root {
+    --bg-primary: #0F172A;       /* Main background */
+    --bg-secondary: #1E293B;     /* Card background for education & leadership */
+    --text-primary: #F1F5F9;     /* Main titles and headers */
+    --text-secondary: #94A3B8;   /* Paragraphs and descriptions */
+    --accent: #3B82F6;           /* Blue for college names and subtitles */
+    --border: #334155;           /* Subtle borders for containers */
+}
+
+/* ==========================================================================
+   2. GLOBAL BASE SETUP
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.7;
+    padding: 0 0 4rem 0; 
+}
+
+/* Fixed: Adjusted from 800px to 1200px to perfectly match the navbar alignment */
+section {
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+    padding: 0 2rem;
+}
+
+/* Fixed: Match the new layout grid boundary line */
+hr {
+    max-width: 1200px;
+    margin: 3rem auto;
+    border: 0;
+    border-top: 1px solid var(--border);
+}
+
+/* Typography Headings */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+    position: relative;
+    display: inline-block;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent);
+    border-radius: 2px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    max-width: 800px; /* Limits paragraph length slightly for premium readability */
+}
+
+/* ==========================================================================
+   3. GLOBAL NAVBAR SYSTEM (Standardized Position Lock)
+   ========================================================================== */
+.global-navbar {
+    width: 100%;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 3rem;
+    padding: 1.25rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.75rem;
+}
+
+.nav-item {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+    color: var(--accent);
+}
+
+.nav-item.active {
+    color: #38BDF8;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   4. EDUCATION & LEADERSHIP TIMELINE CARDS
+   ========================================================================== */
+#education h3, 
+#leadership h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#education h3:first-of-type,
+#leadership h3:first-of-type {
+    margin-top: 0;
+}
+
+strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+#education p,
+#leadership p {
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+}
+
+#education, #leadership {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 850px; /* Keeps the profile cards looking neat and compact */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+#education:hover, #leadership:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+}
+
+/* ==========================================================================
+   5. MOTIVATION SECTION
+   ========================================================================== */
+#motivation {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    border-left: 4px solid var(--accent);
+    padding: 1.5rem 2rem;
+    border-radius: 0 12px 12px 0;
+    max-width: 850px;
+}
+
+/* ==========================================================================
+   6. MOBILE RESPONSIVENESS
+   ========================================================================== */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 2rem;
+    }
+
+    section {
+        padding: 0 1.25rem;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1.25rem;
+    }
+
+    .navbar-links {
+        gap: 1.25rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #education, #leadership {
+        padding: 1.5rem;
+    }
+}

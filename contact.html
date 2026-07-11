@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css\contact.css">
+    <link rel="stylesheet" href="css\home.css">
+</head>
+<body>
+    <header class="global-navbar">
+    <div class="navbar-container">
+        <div class="navbar-brand">Pruthviraj</div>
+        <nav class="navbar-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About</a>
+            <a href="skills.html" class="nav-item">Skills</a>
+            <a href="projects.html" class="nav-item">Projects</a>
+            <a href="contact.html" class="nav-item active">Contact</a> </nav>
+    </div>
+</header>
+
+    <main id="contact-container">
+        <h1 class="page-title">Get In Touch</h1>
+        <p class="page-description">Have a question, a project idea, or just want to say hello? Drop a message or connect via my socials.</p>
+
+        <div class="contact-wrapper">
+            
+            <section class="contact-form-section">
+                <h2>Send a Message</h2>
+                <form id="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+
+            <section class="contact-info-section">
+                <h2>Contact Information</h2>
+                
+                <div class="info-details">
+                    <p class="info-item">
+                        <strong>Email:</strong> 
+                        <a href="mailto:pruthvipatil915@gmail.com">pruthvipatil915@gmail.com</a>
+                        
+                    </p>
+                    <p class="info-item">
+                        <strong>Location:</strong> Borgaon Karnataka, India
+                    </p>
+                </div>
+
+                <div class="social-links-container">
+                    <h3>Connect with Me</h3>
+                    <ul class="social-links-list">
+                        <li>
+                            <a href="https://linkedin.com/in/pruthvirajkpatil" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/pruthviraj1709" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/pruthvi_1709" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="resume-download-container">
+                    <a href="assets/PruthviPatilResume.pdf" download class="btn btn-secondary">Download Resume</a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>

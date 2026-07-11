@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="css\projects.css">
+    <link rel="stylesheet" href="css\home.css">
+</head>
+<body>
+    <header class="global-navbar">
+    <div class="navbar-container">
+        <div class="navbar-brand">Pruthviraj</div>
+        <nav class="navbar-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About</a>
+            <a href="skills.html" class="nav-item">Skills</a>
+            <a href="projects.html" class="nav-item active">Projects</a> <a href="contact.html" class="nav-item">Contact</a>
+        </nav>
+    </div>
+</header>
+
+    <main id="projects-container">
+        <h1 class="page-title">Featured Projects</h1>
+        <p class="page-description">A showcase of the systems and applications I have built, spanning full-stack development and machine learning.</p>
+
+        <div class="projects-grid">
+            
+            <article class="project-card" id="project-bus-reservation">
+                <h2 class="project-title">Bus Reservation System</h2>
+                <p class="project-tagline">A full-stack web application designed for seamless online bus ticket booking and reservation management.</p>
+                
+                <h3 class="section-subtitle">Key Highlights:</h3>
+                <ul class="project-highlights">
+                    <li>Features an interactive seat selection layout and handles real-time seat availability updates to prevent overbooking.</li>
+                    <li>Implements secure user authentication alongside tailored dashboards for managing roles between passengers and administrators.</li>
+                </ul>
+
+                <div class="project-tech-stack">
+                    <strong>Technologies Used:</strong> React, Spring Boot (REST APIs), Java, MySQL
+                </div>
+            </article>
+
+            <article class="project-card" id="project-fertilizer-recommendation">
+                <h2 class="project-title">Fertilizer Recommendation System</h2>
+                <p class="project-tagline">An intelligent machine learning model that recommends the optimal fertilizer type based on soil and crop properties.</p>
+                
+                <h3 class="section-subtitle">Key Highlights:</h3>
+                <ul class="project-highlights">
+                    <li>Utilizes a Random Forest / Decision Tree classification algorithm trained to provide highly accurate agricultural recommendations.</li>
+                    <li>Processes key environmental metrics including Nitrogen (N), Phosphorus (P), Potassium (K) values, soil matrix, and target crop type.</li>
+                </ul>
+
+                <div class="project-tech-stack">
+                    <strong>Technologies Used:</strong> Python, Scikit-Learn, Flask
+                </div>
+            </article>
+
+            <article class="project-card" id="project-hotel-management">
+                <h2 class="project-title">Hotel Management System</h2>
+                <p class="project-tagline">A comprehensive system built to manage hospitality workflows, from room allocation to guest invoicing.</p>
+                
+                <h3 class="section-subtitle">Key Highlights:</h3>
+                <ul class="project-highlights">
+                    <li>Engineered with robust CRUD operations for handling live guest databases, customer records, and checkout histories.</li>
+                    <li>Features a central administration dashboard designed to track occupancy statistics and automate complex billing schemas.</li>
+                </ul>
+
+                <div class="project-tech-stack">
+                    <strong>Technologies Used:</strong> Java, MySQL, JDBC
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+</body>
+</html>
